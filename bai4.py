@@ -1,40 +1,52 @@
+import math
+
 try:
-    Van = float(input("nhap diem van: "))
-    Toan = float(input("nhap diem toan: "))
-    Anh = float(input("nhap diem anh: "))
+    van = float(input('Nhập điểm văn: '))
+    toan = float(input('Nhập điểm toán: '))
+    anh = float(input('Nhập điểm anh: '))
 except ValueError:
-    print('sai kieu nhap lieu')
+    print('Lỗi nhập sai kiểu dữ liệu')
 else:
-    if any(x < 0 or x > 10 for x in (Van, Toan, Anh)):
-        print('sai kieu du lieu')
+    DTB = (van + toan + anh) / 3
+    if van < 0 or van > 10:  
+        print("Nhập điểm văn ko hợp lệ")
+    elif toan < 0 or toan > 10:
+        print("Nhập điểm toán ko hợp lệ")
+    elif anh < 0 or anh > 10:
+        print("Nhập điểm anh ko hợp lệ")
     else:
-        dtb = (Van + Toan + Anh) / 3
-        if dtb >= 9:
-            print('xuat sac')
-        elif dtb >= 8:
-            print('gioi')
-        elif dtb >= 7:
-            print('kha')
-        elif dtb >= 5:
-            print('tb')
-        else:
-            print('yeu')
+        if DTB >= 9:
+            print('Xếp loại xuất sắc')
+        elif DTB >= 8 and DTB < 9:
+            print('Xếp loại giỏi')
+        elif DTB >=7 and DTB < 8:
+            print('Xếp loại khá')
+        elif DTB >= 5 and DTB < 7:
+            print('Xếp loại trung bình')
+        else: 
+            print('Xếp loại yếu')
 
 
-a = 2
-while a <= 10:
-    print(float(a), end='')
-    a += 2
+    # vd1: In ra các số chẵn từ 2 đến 10
+            i = 2
+            while i <= 10:
+            print(i, end=" ")
+            i += 2
+    # vd2: In ra các bội số của 3 từ 3 đến 18
+            i = 3
+            while i <= 18:
+            print(i, end=" ")
+            i += 3
+    # vd3: Tính tổng các số từ 1 đến 100
+            i = 5
+            while i <= 100:
+            print(i, end=" ")
+            i += 5
+    # vd4: Tính giai thừa của một số nguyên dương n
+            i = 1
+            while i <= 99:
+            print (i, end="+")
+            i += 1
+            print(100)
+            
 
-b = 3
-while b <= 18:
-    print(float(b), end='')
-    b += 3
-c = 5
-while c <= 100:
-    print(float(c), end='')
-    c += 5
-
-d = 1
-while d = 100:
-    print(float(d), end='')
