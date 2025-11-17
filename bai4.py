@@ -30,23 +30,23 @@ else:
     # vd1: In ra các số chẵn từ 2 đến 10
             i = 2
             while i <= 10:
-            print(i, end=" ")
-            i += 2
+                print(i, end=" ")
+                i += 2
     # vd2: In ra các bội số của 3 từ 3 đến 18
             i = 3
             while i <= 18:
-            print(i, end=" ")
-            i += 3
+                print(i, end=" ")
+                i += 3
     # vd3: Tính tổng các số từ 1 đến 100
             i = 5
             while i <= 100:
-            print(i, end=" ")
-            i += 5
+                 print(i, end=" ")
+                 i += 5
     # vd4: Tính giai thừa của một số nguyên dương n
             i = 1
             while i <= 99:
-            print (i, end="+")
-            i += 1
+                print(i, end="+")
+                i += 1
             print(100)
             
 
